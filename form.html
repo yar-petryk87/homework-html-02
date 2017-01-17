@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form method="POST" action="https://formspree.io/y.petryk87@ukr.net">
+        <fieldset>
+            <legend>Personal information</legend>
+                <label>Name:<input type="text" name="name" required placeholder="Name"></label><br>
+                <label>Surname:<input type="text" name="surname" required placeholder="Surname"></label><br>
+                <label>Age:<input type="number" name="age" min="1" step="1" value="18"> </label><br>
+                <label>Gender:<input type="radio" name="gender" required checked> Male</label>
+                <label><input type="radio" name="gender" required> Female</label><br>
+                <label>Marital status:
+                    <select name="marital-status">
+                        <option value="single"> single</option>
+                        <option value="married"> married</option>
+                        <option value="divorced"> divorced</option>
+                        <option value="in-relationship"> in relationship</option>
+                    </select><br>
+                </label>
+                <label>Education:
+                    <select name="education">
+                        <option value="compulsory">compulsory</option>
+                        <option value="higher" selected>higher</option>
+                        <option value="continuing">continuing</option>
+                    </select>
+                </label><br>
+                <label>Phone:<input type="text" name="phone" required placeholder="Phone number" pattern="/|[+][d{12}]/" title="+380980368335"></label><br>
+                <label>Email:<input type="text" name="email" required placeholder="Email"></label>
+        </fieldset>
+        <fielset>
+            <legend> </legend>
+            
+            
+            
+            
+            
+        </fielset>
+    </form>
+</body>
+</html>
